@@ -1,0 +1,185 @@
+/*fundo do site e fontes pretas */
+body {
+    background-color: #bfc7ca;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black !important; /* Garante que todas as fontes sejam pretas */
+}
+/*retângulo de fundo do texto da label */
+.label-background {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: rgba(220, 220, 220, 0.8); 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+
+/* Container esquerdo (inputs e botão) */
+.left-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 10px solid blue; /* Borda à direita */
+    border-left: 10px solid blue;  /* Borda à esquerda */
+    padding-left: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+    background-image: url('background_note.jpeg'); /* Imagem de fundo */
+    background-size: cover; /* Cobre todo o container */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+    border-top-left-radius: 20px; /* Arredonda a borda superior esquerda */
+    border-top-right-radius: 20px; /* Arredonda a borda superior direita */
+    border-bottom-left-radius: 20px; /* Arredonda a borda inferior esquerda */
+    border-bottom-right-radius: 20px; /* Arredonda a borda inferior direita */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
+}
+
+/* Caixa de login, sem fundo */
+.login-box {
+    text-align: left;
+    color: #000000 !important; /* Garante que o texto da caixa de login seja preto */
+    width: 100%;
+}
+
+/* Estilo geral para os inputs e selects */
+.login-box input, .login-box select {
+    width: calc(100% - 24px); /* Deixa os campos com a largura uniforme */
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #222222; /* Borda preta */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(220, 220, 220, 0.8); /* Cinza claro com opacidade */
+    color: #000000 !important; /* Garante que o texto dos inputs fique preto */
+    box-sizing: border-box;
+}
+
+/* Placeholder dos inputs e selects */
+.login-box input::placeholder, .login-box select::placeholder {
+    color: #000000; /* Cor preta para os placeholders */
+}
+
+/* Labels e alinhamento */
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #000000 !important; /* Garante que o texto das labels seja preto */
+    font-weight: bold; /* Fonte em negrito para labels */
+}
+
+/* Estilo para o campo de seleção de diabetes */
+.diabetes-select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzMzMyIgZD0iTTExLjI5IDExTDE2IDIuNzNsNC43MSA4LjI3TDExLjI5IDExem0wIDBMMTEgMTIuNzZsLTQuNzEgOC4yNyA5LjQxIDBWMTQuNzVaIi8+PC9zdmc+')
+        no-repeat right 10px center;
+    background-size: 12px;
+    background-color: rgba(220, 220, 220, 0.62); /* Cinza claro com opacidade */
+    border: 2px solid #222222; /* Borda preta */
+    width: 100%;
+}
+
+/* Estilo dos inputs de senha */
+.password-input {
+    width: calc(100% - 24px); /* Ajusta a largura dos campos de senha */
+    background-color: rgba(220, 220, 220, 0.8); /* Cinza claro com opacidade */
+}
+
+/* Estilo para o botão de confirmação */
+.login-box button {
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    background-color: blue; /* Azul sólido */
+    color: rgb(251, 251, 251) !important; /* Cor da fonte no botão */
+    border: 2px solid blue; /* Borda azul sólida */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold; /* Fonte em negrito */
+    text-decoration: none !important; /* Remove qualquer estilo de risco */
+}
+
+
+/* Efeito hover no botão */
+.login-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Links de recuperação e cadastro */
+.links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o checkbox e termos de uso */
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px; /* Espaço entre o checkbox e o texto */
+    width: auto; /* Ajusta a largura do checkbox para seu tamanho padrão */
+    height: auto; /* Ajusta a altura do checkbox para seu tamanho padrão */
+}
+
+.terms label {
+    color: #000000 !important; /* Garante que o texto dos termos seja preto */
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        display: block;
+        background-color: #bfc7ca;
+    }
+
+    .left-container {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 1;
+        position: relative;
+        border-radius: 20px;
+    }
+
+    .right-container {
+        display: none; /* Oculta o container direito no mobile */
+    }
+
+    .login-box {
+        width: 90%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .login-box input {
+        width: calc(100% - 24px);
+    }
+
+    .login-box button {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+}

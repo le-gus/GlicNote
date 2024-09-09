@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="noteglici.css">
+</head>
+<body>
+    <div class="left-container">
+        <div class="login-box">
+            <h2>Cadastro</h2>
+            <form>
+                <!-- Input de Nome -->
+                <input type="text" class="name-input" placeholder="Nome" required>
+
+                <!-- Input de Sobrenome -->
+                <input type="text" class="surname-input" placeholder="Sobrenome" required>
+                <br>
+                <!-- Input de Data de Nascimento (com calendário) -->
+                <label for="date" class="label-background">Data de nascimento</label>
+                <input type="date" id="date" class="date-input" required>
+
+
+                <!-- Select de Tipo de Diabetes -->
+                <select class="diabetes-select" required>
+                    <option value="" disabled selected>Selecione o tipo de diabetes</option>
+                    <option value="tipo1">Tipo 1</option>
+                    <option value="tipo2">Tipo 2</option>
+                    <option value="gestacional">Gestacional</option>
+                </select>
+
+                <!-- Input de Email -->
+                <input type="email" class="email-input" placeholder="Inserir Email" required>
+
+                <!-- Input de Senha -->
+                <input type="password" class="password-input" placeholder="Escolha uma senha (6 a 8 digitos. Letras e números)" 
+                    pattern="(?=.*\d)(?=.*[a-zA-Z])(?=.*[@#$%^&+=]).{6,}" 
+                    title="Pelo menos 6 dígitos, com letras e números" required>
+
+                <!-- Repetir Senha -->
+                <input type="password" class="password-input" placeholder="Repetir Senha" required>
+
+                <!-- Checkbox e Termos de Uso -->
+                <div class="terms left-align">
+                    <label for="terms">Li e aceito os <a href="termos-de-uso.pdf" target="_blank">Termos de Uso</a></label>
+
+                    <input type="checkbox" id="terms" required>
+                    <br>
+                </div>
+
+                <!-- Botão para Enviar email de confirmação -->
+                <button class="login-box button" type="submit">Cadastrar</button> <!-- Texto atualizado -->
+            </form>
+        </div>
+    </div>
+
+    <div class="right-container"></div>
+</body>
+</html>

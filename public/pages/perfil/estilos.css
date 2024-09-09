@@ -1,0 +1,191 @@
+/* Fundo do site e fontes pretas */
+body {
+    background-color: #bfc7ca;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    color: black !important; 
+}
+
+/* Container esquerdo (para o perfil) ajustado para ocupar toda a altura da página */
+.left-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('background_note.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-right: 10px solid blue;
+    border-left: 10px solid blue;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Estilo do menu para desktop */
+.menu {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Botão do menu hamburguer (visível apenas em dispositivos móveis) */
+.hamburger-menu {
+    display: none;
+    font-size: 40px; /* Aumenta o tamanho do ícone */
+    cursor: pointer;
+    color: white;
+    padding: 20px; /* Aumenta o padding para deixar o botão mais espaçoso */
+}
+
+/* Estilo do menu em dispositivos móveis */
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Caixa de perfil */
+.profile-box {
+    width: 100%;
+    background-color: rgba(220, 220, 220, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #000000 !important;
+    max-height: calc(100vh - 40px);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Estilo das informações de perfil */
+.profile-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Container para a foto do perfil */
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo da imagem de perfil */
+.photo-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #000;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+/* Estilo do input de upload de foto */
+#upload-photo {
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .left-container {
+        width: 100%;
+        border-right: 5px solid blue;
+        border-left: 5px solid blue;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .hamburger-menu {
+        display: block; /* Mostra o ícone de hambúrguer em telas menores */
+        color: black;
+        margin-bottom: 10px;
+    }
+    .menu {
+        display: none; /* O menu normal será ocultado em dispositivos móveis */
+    }
+
+    .menu.active {
+        display: flex; /* Mostra o menu quando o botão é clicado */
+    }
+
+    .hamburger-menu {
+        display: block; /* Mostra o ícone de hambúrguer em telas menores */
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    .profile-box {
+        width: 100%;
+        padding: 10px;
+        max-height: none;
+    }
+
+    .photo-container img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Ajuste para telas muito pequenas */
+@media (max-width: 480px) {
+    .left-container {
+        padding: 5px;
+        border-right: 7px solid blue;
+        border-left: 7px solid blue;
+        border-radius: 10px;
+    }
+
+    .profile-box {
+        padding: 5px;
+        max-height: none;
+    }
+
+    .photo-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+    }
+}

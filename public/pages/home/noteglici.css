@@ -1,0 +1,130 @@
+/* Cor de fundo do site */
+body {
+    background-color: #bfc7ca;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container esquerdo (inputs e botão) */
+.left-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+/* Container direito (imagem de fundo) */
+.right-container {
+    width: 50%;
+    min-height: 100vh; /* Garante que o container direito ocupe toda a altura da tela */
+    background-image: url('background_note.jpeg'); /* Verifique o caminho da imagem */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: 10px solid blue; /* Adiciona borda de 3px do lado esquerdo */
+    border-left: 10px solid blue; /* Adiciona borda de 3px do lado esquerdo */
+    border-top-left-radius: 20px;  /* Arredonda a borda superior esquerda */
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px; /* Arredonda a borda inferior esquerda */
+    border-bottom-right-radius: 20px; /* Arredonda a borda inferior direita */
+}
+
+/* Caixa de login, sem fundo */
+.login-box {
+    text-align: left;
+    color: #333;
+}
+
+/* Estilo dos inputs */
+.login-box input {
+    width: 75%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent; /* Sem fundo */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo do botão Entrar */
+.login-box button {
+    width: 50%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Links de recuperação e cadastro */
+.links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        display: block;
+        background-color: #bfc7ca; /* Cor de fundo */
+    }
+
+    .left-container {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+        z-index: 1; /* Coloca o formulário acima da imagem */
+        position: relative;
+        border-radius: 20px; /* Arredonda as bordas da caixa */
+    }
+
+    .right-container {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-image: url('background_note.jpeg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0; /* Mantém a imagem abaixo do conteúdo */
+    }
+
+    .login-box {
+        width: 90%; /* Ajusta a largura para caber na tela */
+        position: relative;
+        z-index: 2;
+    }
+
+    .login-box input{
+        width: 75%; /* Inputs e botão ocupam toda a largura */
+    }
+    .login-box button {
+        width: 65%; /* Inputs e botão ocupam toda a largura */
+    }
+}
