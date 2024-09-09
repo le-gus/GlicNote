@@ -9,5 +9,5 @@ Cezar Navoscone Roman
 Gabriela Melo
 Gustavo Andrade
 Thiago Cezimbra
-Thiago Hilkner
+Thiago Hilkner e
 Vitor Nascimento
