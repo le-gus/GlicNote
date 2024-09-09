@@ -22,7 +22,7 @@ body {
 .right-container {
     width: 50%;
     min-height: 100vh; /* Garante que o container direito ocupe toda a altura da tela */
-    background-image: url('background_note.jpeg'); /* Verifique o caminho da imagem */
+    background-image: url('../../assets/images/background_note.jpeg'); /* Verifique o caminho da imagem */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

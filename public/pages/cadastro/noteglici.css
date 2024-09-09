@@ -77,7 +77,7 @@ label {
 /* Estilo para o campo de seleção de diabetes */
 .diabetes-select {
     appearance: none;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzMzMyIgZD0iTTExLjI5IDExTDE2IDIuNzNsNC43MSA4LjI3TDExLjI5IDExem0wIDBMMTEgMTIuNzZsLTQuNzEgOC4yNyA5LjQxIDBWMTQuNzVaIi8+PC9zdmc+')
+    background-image: url('../../assets/images/background_note.jpeg')
         no-repeat right 10px center;
     background-size: 12px;
     background-color: rgba(220, 220, 220, 0.62); /* Cinza claro com opacidade */

@@ -18,7 +18,7 @@ body {
     justify-content: flex-start;
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     background-color: rgba(255, 255, 255, 0.9);
-    background-image: url('background_note.jpeg');
+    background-image: url('../../assets/images/background_note.jpeg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center center;

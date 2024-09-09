@@ -1,0 +1,105 @@
+body {
+    background-color: #bfc7ca;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black !important;
+}
+
+.label-background {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: rgba(220, 220, 220, 0.8);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.left-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+    text-align: left;
+    width: 100%;
+}
+
+.login-box input, .login-box select, .login-box textarea {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #222222;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(220, 220, 220, 0.8);
+    color: #000000 !important;
+    box-sizing: border-box;
+}
+
+.login-box textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.login-box button {
+    width: 50%;
+    text-align: center;
+    height: 40px;
+    margin: 15px 0;
+    margin-left: 25%;
+    background-color: blue;
+    color: rgb(251, 251, 251) !important;
+    border: 2px solid blue;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-box button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .left-container {
+        width: 90%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 1;
+        position: relative;
+        border-radius: 20px;
+    }
+
+    .right-container {
+        display: none;
+    }
+
+    .login-box {
+        width: 90%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .login-box input, .login-box select, .login-box textarea {
+        width: calc(100% - 24px);
+    }
+
+    .login-box button {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+}

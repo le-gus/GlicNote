@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Aferição</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/global.css">
+</head>
+<body>
+    <div class="left-container">
+        <div class="login-box">
+            <a href="../perfil/index.html">
+                <img src="../../assets/images/botao-voltar.png" alt="Botão voltar">
+            </a>
+            <h2>Nova Aferição</h2>
+            <form>
+                <!-- Input de Valor da Glicemia -->
+                <label for="glicemia" class="label-background">Valor da Glicemia (mg/dL)</label>
+                <input type="number" id="glicemia" class="glicemia-input" placeholder="Digite o valor da glicemia" required>
+
+                <!-- Input de Data e Hora da Aferição -->
+                <label for="date-time" class="label-background">Data e Hora</label>
+                <input type="datetime-local" id="date-time" class="datetime-input" required>
+
+                <!-- Select de Tipo de Medição -->
+                <label for="tipo-medicao" class="label-background">Tipo de Medição</label>
+                <select id="tipo-medicao" class="tipo-medicao-select" required>
+                    <option value="" disabled selected>Selecione o tipo de medição</option>
+                    <option value="jejum">Jejum</option>
+                    <option value="pre-refeicao">Antes da Refeição</option>
+                    <option value="pos-refeicao">Após a Refeição</option>
+                    <option value="aleatorio">Aleatório</option>
+                    <option value="antes-dormir">Antes de Dormir</option>
+                </select>
+
+                <!-- Campo para Notas ou Observações -->
+                <label for="notas" class="label-background">Notas/Observações</label>
+                <textarea id="notas" class="notas-input" placeholder="Adicione notas ou observações (opcional)"></textarea>
+
+                <!-- Campo para Medicações ou Insulina -->
+                <label for="medicacao" class="label-background">Medicação/Insulina</label>
+                <input type="text" id="medicacao" class="medicacao-input" placeholder="Informe a medicação (opcional)">
+
+                <!-- Botão para Salvar Registro -->
+                <button class="login-box button" type="submit">Salvar Aferição</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="right-container"></div>
+</body>
+</html>
